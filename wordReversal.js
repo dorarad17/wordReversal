@@ -4,7 +4,7 @@
 // takes in parameter of string only
 // string expected to be all lower case and letters a-z
 
-reverseLetters = (string) => {
+wordReversal = (string) => {
 	// tests to see if input is string with only a-z characters
 
 	if (typeof string !== "string") {
@@ -34,11 +34,6 @@ reverseLetters = (string) => {
 	}
 };
 
-// quick tests in console
-console.log(reverseLetters(null)); // expect 'error: must enter a string'
-console.log(reverseLetters("")); // expect 'error: no words entered'
-console.log(reverseLetters("65 has numbers")); // expect 'error: string should only contain lower case a-z'
-console.log(reverseLetters("this has UPPER CASE")); // expect 'error: string should only contain lower case a-z'
-console.log(reverseLetters("punctuation?")); // expect 'error: string should only contain lower case a-z'
-console.log(reverseLetters("this is a test")); // expect 'siht si a tset'
-console.log(reverseLetters("doing another test")); // expect 'gniod rehtona tset'
+module.exports = {
+	wordReversal,
+};

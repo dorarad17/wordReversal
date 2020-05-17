@@ -1,0 +1,23 @@
+{
+	"name": "assessment",
+	"version": "1.0.0",
+	"description": "step_into_tech assessment",
+	"main": "wordReversal.js",
+	"dependencies": {
+		"jest": "^26.0.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dorarad17/wordReversal.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dorarad17/wordReversal/issues"
+	},
+	"homepage": "https://github.com/dorarad17/wordReversal#readme"
+}
