@@ -22,13 +22,9 @@ reverseLetters = (string) => {
 
 		// map across each element in array
 		updatedArray = array.map(function (word) {
-			// split each letter
-			let split = word.split("");
-			// create variable with reversed letters
-			var reverseWord = split.reverse();
-			// join letters back together
-			var joined = reverseWord.join("");
-			return joined;
+			// split each letter, reverse order and join back together
+			let reversed = word.split("").reverse().join("");
+			return reversed;
 		});
 
 		// join array to a string seperated by spaces
