@@ -1,6 +1,7 @@
 // WORD REVERSAL
+
 // function which revereses letters in a word but not order of words
-// takes in parameter of string
+// takes in parameter of string only
 // string expected to be all lower case and letters a-z
 
 reverseLetters = (string) => {
