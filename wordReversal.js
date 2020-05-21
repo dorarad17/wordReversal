@@ -34,6 +34,26 @@ wordReversal = (string) => {
 	}
 };
 
+truncateString = (string) => {
+	if (typeof string !== "string") {
+		return "error: must enter a string";
+	}
+
+	// remove white space to test string characters
+	let noSpaces = string.replace(/ /g, "");
+	if (noSpaces === "") {
+		return "error: no words entered";
+	} else if (/[^a-z]/.test(noSpaces) == true) {
+		return "error: string should only contain lower case a-z";
+	} else if (string.length <= 12) {
+		wordReversal(string);
+	} else if (string.length > 12) {
+		newString = string.slice(0, 12);
+		return wordReversal(newString) + "...";
+	}
+};
+
 module.exports = {
 	wordReversal,
+	truncateString,
 };

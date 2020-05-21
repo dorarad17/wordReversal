@@ -42,3 +42,13 @@ describe("wordReversal", () => {
 		});
 	});
 });
+
+describe("truncateString", () => {
+	describe("wordReversal.truncateString", () => {
+		test("returns words with letters reversed", () => {
+			expect(wordReversal.truncateString("bbc broadcasting house")).toBe(
+				"cbb sacdaorb..."
+			);
+		});
+	});
+});
